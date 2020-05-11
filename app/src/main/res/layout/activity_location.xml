@@ -23,7 +23,7 @@
         android:background="@drawable/btn_custom"
         android:text="Publish Location"
         android:textColor="#ffffffff" />
-    <Button
+    <!-- <Button
         android:id="@+id/btnSubscribe"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="150dp"
@@ -32,7 +32,7 @@
         android:background="@drawable/btn_custom"
         android:text="Subscribe Location"
         android:textColor="#ffffffff"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"/> -->
 
     <TextView
         android:id="@+id/tvLocation"
@@ -45,7 +45,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="TextView"
+        android:text=""
         android:layout_below="@id/tvLocation"/>
 
 
