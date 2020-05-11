@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WhereRU</string>
+    <string name="API_Key">AIzaSyBuy4YDiYPjGMVgOyySX5vs-gL1_lq6zg8</string>
+    <string name="locationTxt">Continuous Location Update</string>
+    <string name="action_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text //<string name="app_name">WhereRUIot</string>-->
+    <string name="EnterDetails">Enter names of your Friends or Family members</string>
+    <string name="swipe_left_for_register">Swipe Left for Register</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="person1">Person1 Name</string>
+    <string name="person2">Person2 Name</string>
+    <string name="tag">Lets join us and \nKnow where are your close ones</string>
+    <string name="swipe_right_for_login">Swipe Right for Login</string>
+    <string name="register">Register</string>
+    <string name="your_name">Name</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Menu string -->
+    <string name="my_location">MyLocation</string>
+    <string name="Closeone_location">"Friends_LocationStatus"</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/locm"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:title="@string/my_location"
+        android:icon="@mipmap/outline_my_location_black_48"/>
+    <item
+        android:id="@+id/locf"
+        android:orderInCategory="100"
+        android:title="@string/Closeone_location"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/outline_explore_black_48"/>
+</menu>
