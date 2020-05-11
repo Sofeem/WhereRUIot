@@ -5,9 +5,12 @@ import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
@@ -33,7 +36,7 @@ public class LocationActivity extends Activity implements
     private static final String TAG = "LocationActivity";
     private static final long INTERVAL = 1000;
     private static final long FASTEST_INTERVAL = 1000;
-
+    private Toolbar toolbar;
 
     Button btnFusedLocation;
     Button pubBtn;
@@ -92,7 +95,7 @@ public class LocationActivity extends Activity implements
         dataReceived = (TextView) findViewById(R.id.textView);
         btnFusedLocation = (Button) findViewById(R.id.btnShowLocation);
         pubBtn = (Button) findViewById(R.id.btnpublish);
-        subbtn = (Button) findViewById(R.id.btnSubscribe);
+        //subbtn = (Button) findViewById(R.id.btnSubscribe);
 
         btnFusedLocation.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,14 +113,7 @@ public class LocationActivity extends Activity implements
 
            }
        });
-       subbtn.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               //mqttHelper.subscribeToTopic();
 
-
-           }
-       });
 
     }
 
@@ -240,7 +236,16 @@ public class LocationActivity extends Activity implements
             Log.d(TAG, "Location update resumed .....................");
         }
     }
-  /*  private void SendLocation(String lat){
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menu_bar,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    /*  private void SendLocation(String lat){
         mqttHelper = new MQtthelper(getApplicationContext());
        mqttHelper.publishMessage(lat);
     }*/
